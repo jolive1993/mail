@@ -42,7 +42,9 @@
   <ItemGroup>
     <Compile Include="Envelope.cs" />
     <Compile Include="Freight.cs" />
+    <Compile Include="IDrive.cs" />
     <Compile Include="Mail.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Package.cs" />
     <Compile Include="Route.cs" />
     <Compile Include="Van.cs" />

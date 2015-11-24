@@ -8,5 +8,10 @@ namespace Functionality
 {
     public class Envelope : Mail
     {
+        public Envelope(int weight, int id)
+        {
+            this.weight = 0;
+            this.id = 0;
+        }
     }
 }

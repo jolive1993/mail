@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Functionality
 {
-    public class Freight : Vehicle
+    public class Freight : Vehicle, IDrive
     {
+        public void refuel()
+        {
+
+        }
+        public void deliver()
+        {
+
+        }
     }
 }

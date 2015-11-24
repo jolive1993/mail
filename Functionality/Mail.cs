@@ -8,6 +8,13 @@ namespace Functionality
 {
     public abstract class Mail
     {
-        int weight = 0;
+        public int weight;
+        public int id;
+        public int getWeight()
+        {
+            int weight;
+            weight = this.weight;
+            return weight;
+        }
     }
 }

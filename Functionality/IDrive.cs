@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UserExperience
+namespace Functionality
 {
-    public class Class1
+    public interface IDrive
     {
+        void refuel();
+        void deliver();
+
     }
 }
