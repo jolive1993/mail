@@ -10,10 +10,11 @@ namespace MailLogic
     {
         public abstract string Type { get; }
         public double pricePerPound;
-        public double calcTotalPrice(int totalWeight)
+        public double calcTotalPrice(double totalWeight)
         {
             double totalPrice;
-            totalPrice = totalWeight * this.pricePerPound;
+            totalPrice = totalWeight * pricePerPound;
+            totalPrice = Math.Round(totalPrice, 2);
             return totalPrice;
         }
     }

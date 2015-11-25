@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MailLogic;
 
 namespace UserExperience
 {
@@ -16,11 +15,11 @@ namespace UserExperience
             numItems = Int32.Parse(Console.ReadLine());
             return numItems;
         }
-        public int getWeight(int i)
+        public double getWeight(int i)
         {
-            int itemWeight;
+            double itemWeight;
             Console.WriteLine("What is the weight of item " + (i + 1) + "? (in lbs)");
-            itemWeight = Int32.Parse(Console.ReadLine());
+            itemWeight = double.Parse(Console.ReadLine());
             return itemWeight;
         }
         public int getPricing()
@@ -30,10 +29,10 @@ namespace UserExperience
             id = Int32.Parse(Console.ReadLine());
             return id;
         }
-        public Dictionary<int, int> compileOrder(int numItems)
+        public Dictionary<int, double> compileOrder(int numItems)
         {
-            Dictionary<int, int> order = new Dictionary<int, int>();
-            int weight;
+            Dictionary<int, double> order = new Dictionary<int, double>();
+            double weight;
             for (int i = 0; i < numItems; i++)
             {
                 weight = getWeight(i);

@@ -8,7 +8,7 @@ namespace MailLogic
 {
     public abstract class Mail
     {
-        public int weight;
+        public double weight;
         public int id;
     }
 }

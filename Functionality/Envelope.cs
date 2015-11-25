@@ -8,7 +8,7 @@ namespace MailLogic
 {
     public class Envelope : Mail
     {
-        public Envelope(int weight, int id)
+        public Envelope(double weight, int id)
         {
             this.weight = 0;
             this.id = 0;

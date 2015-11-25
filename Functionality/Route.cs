@@ -10,7 +10,7 @@ namespace MailLogic
     {
         public string destination = null;
         public string startingPoint = null;
-        public string calcTransport(int totalWeight)
+        public string calcTransport(double totalWeight)
         {
             string result;
             if (totalWeight < 200)

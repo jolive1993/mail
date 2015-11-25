@@ -8,10 +8,10 @@ namespace MailLogic
 {
     public class Order
     {
-        public List<Mail> returnMailList(Dictionary<int, int> order)
+        public List<Mail> returnMailList(Dictionary<int, double> order)
         {
             List<Mail> sortedOrder = new List<Mail>();
-            foreach (KeyValuePair<int, int> entry in order)
+            foreach (KeyValuePair<int, double> entry in order)
             {
                 if (entry.Value > 5)
                 {
@@ -25,10 +25,10 @@ namespace MailLogic
             }
             return sortedOrder;
         }
-        public int totalOrderWeight(Dictionary<int, int> order)
+        public double totalOrderWeight(Dictionary<int, double> order)
         {
-            int totalWeight = 0;
-            foreach (KeyValuePair<int, int> entry in order)
+            double totalWeight = 0;
+            foreach (KeyValuePair<int, double> entry in order)
             {
                 totalWeight += entry.Value;
             }

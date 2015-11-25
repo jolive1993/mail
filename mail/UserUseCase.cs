@@ -22,10 +22,10 @@ namespace mail
                 TransportFactory transportFactory = new TransportFactory();
                 Pricing priceModel;
                 Vehicle transportType;
-                Dictionary<int, int> order;
+                Dictionary<int, double> order;
                 List<Mail> sortedOrder;
                 int numItems;
-                int totalWeight;
+                double totalWeight;
                 int numPackages = 0;
                 int numEnvelopes = 0;
                 string transport;
