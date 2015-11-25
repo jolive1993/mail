@@ -12,5 +12,13 @@ namespace MailLogic
         {
             pricePerPound = .75;
         }
+        public override string Type
+        {
+            get
+            {
+                return "ExpeditedPricing";
+            }
+        }
     }
 }
+

@@ -8,6 +8,7 @@ namespace MailLogic
 {
     public abstract class Pricing
     {
+        public abstract string Type { get; }
         public double pricePerPound;
         public double calcTotalPrice(int totalWeight)
         {

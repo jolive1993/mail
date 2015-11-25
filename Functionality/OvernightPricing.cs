@@ -12,5 +12,13 @@ namespace MailLogic
         {
             pricePerPound = 1.05;
         }
+        public override string Type
+        {
+            get
+            {
+                return "OvernightPricing";
+            }
+        }
     }
 }
+

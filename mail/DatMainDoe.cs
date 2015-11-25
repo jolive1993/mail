@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MailLogic;
 using UserExperience;
+using ClassFactories;
 
 namespace mail
 {
@@ -17,6 +18,7 @@ namespace mail
             Route route = new Route();
             GetInput input = new GetInput();
             Order userOrder = new Order();
+            PricingFactory factory = new PricingFactory();
             int numItems;
             Dictionary<int, int> order;
             List<Mail> sortedOrder;
@@ -25,6 +27,9 @@ namespace mail
             int numEnvelopes = 0;
             string transport;
             string quit;
+            int priceModelId;
+            double totalPrice;
+            Pricing result;
             numItems = input.getItemCount();
             Console.WriteLine("Your total item count" + numItems);
             order = input.compileOrder(numItems);
@@ -45,6 +50,10 @@ namespace mail
             Console.WriteLine("You're total order weight is " + totalWeight);
             transport = route.calcTransport(totalWeight);
             Console.WriteLine("Your order will be shipped by " + transport);
+            priceModelId = input.getPricing();
+            result = factory.Get(priceModelId);
+            totalPrice = result.calcTotalPrice(totalWeight);
+            Console.WriteLine("The price for your order is " + totalPrice);
             Console.WriteLine("Your order is complete, Press enter to fill another order or type quit to quit");
             quit = Console.ReadLine();
                 if (quit == "quit")

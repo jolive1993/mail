@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5407B7A9-646D-45BC-AA6D-5E24069B6C5D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{5C6DE0FF-A9E8-4F08-B543-8A112F077606}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>mail</RootNamespace>
-    <AssemblyName>mail</AssemblyName>
+    <RootNamespace>ClassFactories</RootNamespace>
+    <AssemblyName>ClassFactories</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,18 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatMainDoe.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="PricingFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassFactories\ClassFactories.csproj">
-      <Project>{5c6de0ff-a9e8-4f08-b543-8a112f077606}</Project>
-      <Name>ClassFactories</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Functionality\MailLogic.csproj">
       <Project>{394e079e-5a2d-4f01-9d3d-e80d55d03f73}</Project>
       <Name>MailLogic</Name>

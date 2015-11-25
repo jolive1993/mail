@@ -34,5 +34,12 @@ namespace UserExperience
             }
             return order;
         }
+        public int getPricing()
+        {
+            int id;
+            Console.WriteLine("Press 0 for standard, 1 for expedited, 2 for overnight");
+            id = Int32.Parse(Console.ReadLine());
+            return id;
+        }
     }
 }
