@@ -44,9 +44,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Functionality\Functionality.csproj">
+    <ProjectReference Include="..\Functionality\MailLogic.csproj">
       <Project>{394e079e-5a2d-4f01-9d3d-e80d55d03f73}</Project>
-      <Name>Functionality</Name>
+      <Name>MailLogic</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

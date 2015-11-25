@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UserExperience;
-using Functionality;
+using MailLogic;
 
 namespace mail
 {

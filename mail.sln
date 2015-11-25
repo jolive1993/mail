@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mail", "mail\mail.csproj", "{5407B7A9-646D-45BC-AA6D-5E24069B6C5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functionality", "Functionality\Functionality.csproj", "{394E079E-5A2D-4F01-9D3D-E80D55D03F73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailLogic", "Functionality\MailLogic.csproj", "{394E079E-5A2D-4F01-9D3D-E80D55D03F73}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserExperience", "UserExperience\UserExperience.csproj", "{66473F4B-19F6-4F42-BCA3-AA28B0F39CC9}"
 EndProject

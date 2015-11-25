@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace MailLogic
 {
-    public class Package : Mail
+    public class OvernightPricing : Pricing
     {
-        public Package(int weight, int id)
+        public OvernightPricing()
         {
-            this.weight = 0;
-            this.id = 0;
+            pricePerPound = 1.05;
         }
     }
 }

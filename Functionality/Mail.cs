@@ -4,17 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Functionality
+namespace MailLogic
 {
     public abstract class Mail
     {
         public int weight;
         public int id;
-        public int getWeight()
-        {
-            int weight;
-            weight = this.weight;
-            return weight;
-        }
     }
 }

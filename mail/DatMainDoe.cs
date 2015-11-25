@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Functionality;
+using MailLogic;
 using UserExperience;
 
 namespace mail
@@ -46,7 +46,6 @@ namespace mail
             transport = route.calcTransport(totalWeight);
             Console.WriteLine("Your order will be shipped by " + transport);
             Console.WriteLine("Your order is complete, Press enter to fill another order or type quit to quit");
-            Console.Beep();
             quit = Console.ReadLine();
                 if (quit == "quit")
                 {

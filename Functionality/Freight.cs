@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Functionality
+namespace MailLogic
 {
     public class Freight : Vehicle, IDrive
     {

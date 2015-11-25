@@ -7,8 +7,8 @@
     <ProjectGuid>{394E079E-5A2D-4F01-9D3D-E80D55D03F73}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Functionality</RootNamespace>
-    <AssemblyName>Functionality</AssemblyName>
+    <RootNamespace>MailLogic</RootNamespace>
+    <AssemblyName>MailLogic</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,12 +41,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Envelope.cs" />
+    <Compile Include="ExpeditedPricing.cs" />
     <Compile Include="Freight.cs" />
     <Compile Include="IDrive.cs" />
     <Compile Include="Mail.cs" />
     <Compile Include="Order.cs" />
+    <Compile Include="OvernightPricing.cs" />
     <Compile Include="Package.cs" />
+    <Compile Include="Pricing.cs" />
     <Compile Include="Route.cs" />
+    <Compile Include="StandardPricing.cs" />
     <Compile Include="Van.cs" />
     <Compile Include="Vehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
