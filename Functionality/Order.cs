@@ -15,7 +15,7 @@ namespace MailLogic
             {
                 if (entry.Value > 5)
                 {
-                    sortedOrder.Add(new Package(entry.Value, entry.Key)); 
+                    sortedOrder.Add(new Package(entry.Value, entry.Key));
                 }
                 else
                 {
@@ -30,9 +30,34 @@ namespace MailLogic
             int totalWeight = 0;
             foreach (KeyValuePair<int, int> entry in order)
             {
-                totalWeight += entry.Value; 
+                totalWeight += entry.Value;
             }
             return totalWeight;
         }
+        public int getNumPackage(List<Mail> sortedOrder)
+        {
+            int numPackages = 0;
+            foreach (Mail obj in sortedOrder)
+            {
+                if (obj is Package)
+                {
+                    numPackages += 1;
+                }
+            }
+            return numPackages;
+        }
+        public int getNumEnvelope(List<Mail> sortedOrder)
+        {
+            int numEnvelope = 0;
+            foreach (Mail obj in sortedOrder)
+            {
+                if (obj is Envelope)
+                {
+                    numEnvelope += 1;
+                }
+            }
+            return numEnvelope;
+        }
     }
 }
+
