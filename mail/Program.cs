@@ -12,7 +12,7 @@ namespace mail
     {
         static void Main(string[] args)
         {
-            DatMainDoe.Start();
+            UserUseCase user = new UserUseCase();
         }
     }
 }

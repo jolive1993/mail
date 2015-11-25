@@ -9,9 +9,9 @@ using ClassFactories;
 
 namespace mail
 {
-    class DatMainDoe
+    public class UserUseCase
     {
-        public static void Start()
+        public UserUseCase()
         {
             while (true)
             {
@@ -44,7 +44,7 @@ namespace mail
                 priceModelId = input.getPricing();
                 priceModel = factory.Get(priceModelId);
                 totalPrice = priceModel.calcTotalPrice(totalWeight);
-                Console.WriteLine("The price for your order is " + totalPrice);
+                Console.WriteLine("The price for your order is $" + totalPrice);
                 Console.WriteLine("Your order is complete, Press enter to fill another order or type quit to quit");
                 quit = Console.ReadLine();
                 if (quit == "quit")
@@ -55,3 +55,5 @@ namespace mail
         }
     }
 }
+
+        
