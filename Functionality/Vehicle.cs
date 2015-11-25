@@ -8,6 +8,9 @@ namespace MailLogic
 {
     public abstract class Vehicle
     {
-        public int fuel = 0;
+        public abstract string Type { get; }
+        public int fuel;
+        public int maxCapacity;
+        public int load;
     }
 }

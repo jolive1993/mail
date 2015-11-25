@@ -13,7 +13,7 @@ namespace MailLogic
         public string calcTransport(int totalWeight)
         {
             string result;
-            if (totalWeight < 100)
+            if (totalWeight < 200)
             {
                 result = "Van";
             }

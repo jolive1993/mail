@@ -19,20 +19,9 @@ namespace UserExperience
         public int getWeight(int i)
         {
             int itemWeight;
-            Console.WriteLine("What is the weight of item " + (i + 1) + "?");
+            Console.WriteLine("What is the weight of item " + (i + 1) + "? (in lbs)");
             itemWeight = Int32.Parse(Console.ReadLine());
             return itemWeight;
-        }
-        public Dictionary<int, int> compileOrder(int numItems)
-        {
-            Dictionary<int, int> order = new Dictionary<int, int>();
-            int weight;
-            for (int i = 0; i<numItems; i++)
-            {
-                weight = getWeight(i);
-                order.Add(i, weight);
-            }
-            return order;
         }
         public int getPricing()
         {
@@ -40,6 +29,17 @@ namespace UserExperience
             Console.WriteLine("Press 0 for standard, 1 for expedited, 2 for overnight");
             id = Int32.Parse(Console.ReadLine());
             return id;
+        }
+        public Dictionary<int, int> compileOrder(int numItems)
+        {
+            Dictionary<int, int> order = new Dictionary<int, int>();
+            int weight;
+            for (int i = 0; i < numItems; i++)
+            {
+                weight = getWeight(i);
+                order.Add(i, weight);
+            }
+            return order;
         }
     }
 }

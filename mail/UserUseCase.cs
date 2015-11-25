@@ -18,8 +18,10 @@ namespace mail
                 Route route = new Route();
                 GetInput input = new GetInput();
                 Order userOrder = new Order();
-                PricingFactory factory = new PricingFactory();
+                PricingFactory priceFactory = new PricingFactory();
+                TransportFactory transportFactory = new TransportFactory();
                 Pricing priceModel;
+                Vehicle transportType;
                 Dictionary<int, int> order;
                 List<Mail> sortedOrder;
                 int numItems;
@@ -31,7 +33,6 @@ namespace mail
                 int priceModelId;
                 double totalPrice;
                 numItems = input.getItemCount();
-                Console.WriteLine("Your total item count" + numItems);
                 order = input.compileOrder(numItems);
                 sortedOrder = userOrder.returnMailList(order);
                 numPackages = userOrder.getNumPackage(sortedOrder);
@@ -40,12 +41,14 @@ namespace mail
                 totalWeight = userOrder.totalOrderWeight(order);
                 Console.WriteLine("You're total order weight is " + totalWeight);
                 transport = route.calcTransport(totalWeight);
+                transportType = transportFactory.Get(transport);
                 Console.WriteLine("Your order will be shipped by " + transport);
+                Console.WriteLine("Select your pricing model");
                 priceModelId = input.getPricing();
-                priceModel = factory.Get(priceModelId);
+                priceModel = priceFactory.Get(priceModelId);
                 totalPrice = priceModel.calcTotalPrice(totalWeight);
                 Console.WriteLine("The price for your order is $" + totalPrice);
-                Console.WriteLine("Your order is complete, Press enter to fill another order or type quit to quit");
+                Console.WriteLine("Your order is complete, Press enter to fill another order or type 'quit' to quit");
                 quit = Console.ReadLine();
                 if (quit == "quit")
                 {

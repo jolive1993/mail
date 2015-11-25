@@ -42,15 +42,12 @@
   <ItemGroup>
     <Compile Include="PricingFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransportFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Functionality\MailLogic.csproj">
       <Project>{394e079e-5a2d-4f01-9d3d-e80d55d03f73}</Project>
       <Name>MailLogic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UserExperience\UserExperience.csproj">
-      <Project>{66473f4b-19f6-4f42-bca3-aa28b0f39cc9}</Project>
-      <Name>UserExperience</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
